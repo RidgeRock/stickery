@@ -1,4 +1,5 @@
-## Building a “dapp” using Dapplets Project infrastructure
+## Building a dApp using Dapplets Project infrastructure
+![](https://github.com/RidgeRock/stickery/blob/3a2f360da2ca06f0a91c0d9be32ae79db70ee70c/GitcoinImages/Logo.png)
 
 ### About Dapplets Project
 
@@ -34,16 +35,21 @@ During development, it is necessary to propose an architecture in which it is po
 * The size of the placed sticker is static and equals 100*100px.
 * Ability for the user to delete the stickers he has posted.
 * The dapplet allows you to place stickers in the control points of the post according to the scheme below, display stickers in these points, and match the address of a particular user with the placed sticker. To do this, we suggest singling out a typical structure of a social network post and defining typical checkpoints for placing stickers.
+![](https://github.com/RidgeRock/stickery/blob/3a2f360da2ca06f0a91c0d9be32ae79db70ee70c/GitcoinImages/Points.png)
 
-* The number of checkpoints per post increases proportionally to the size of the post container and its content (so if the post contains only a few lines of text - without worsening the existing UX, if it's a Twitter post with text and image - 7 checkpoints, if the Instagram post with text and image - 11 checkpoints). The calculation of the number of control points must be implemented in the selected function. Stickers cannot change existing page layout because they are overlay elements, so they can extend horizontally up to 20px beyond container boundaries. Vertical limits of sticker positioning correspond to the boundaries of social network controls.
+The number of checkpoints per post increases proportionally to the size of the post container and its content (so if the post contains only a few lines of text - without worsening the existing UX, if it's a Twitter post with text and image - 7 checkpoints, if the Instagram post with text and image - 11 checkpoints). The calculation of the number of control points must be implemented in the selected function. Stickers cannot change existing page layout because they are overlay elements, so they can extend horizontally up to 20px beyond container boundaries. Vertical limits of sticker positioning correspond to the boundaries of social network controls.
 
 ### Resources
 
-  Official Dapplets developers support
-  Dapplets Platform Documentation
-  Dapplet code template
+  [Official Dapplets developers support](https://discord.gg/MeccGNcd)
+  
+  [Dapplets Platform Documentation](https://docs.dapplets.org/docs)
+  
+  [Dapplet code template](https://github.com/dapplets/dapplet-template)
+  ```
   Figma design file
-
+  ```
+  
 ### Submission Requirements
 
 * Functionally working dapplet.
