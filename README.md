@@ -41,13 +41,13 @@ The number of checkpoints per post increases proportionally to the size of the p
 
 ## Resources
 
+  [Figma design file](https://www.figma.com/file/OIu6K277H1AfVlTJbBqQm7/Stickery_UI?node-id=0%3A1)
+
   [Official Dapplets developers support](https://discord.gg/MeccGNcd)
   
   [Dapplets Platform Documentation](https://docs.dapplets.org/docs)
   
   [Dapplet code template](https://github.com/dapplets/dapplet-template)
-  
-  [Figma design file WIP](https://www.figma.com/file/OIu6K277H1AfVlTJbBqQm7/Stickery_UI?node-id=0%3A1)
   
 ## Submission Requirements
 
