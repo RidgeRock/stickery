@@ -18,7 +18,7 @@ const Profile = () => {
     <div>
       <div className="flex items-center cursor-pointer" onClick={() => setPopupOpen(true)}>
         <p className="text-sm text-dark-gray underline mr-8px">{formatAddress(account, 7)}</p>
-        <img src="/profile.png" alt="profile-placeholder" className="h-24px w-24px rounded-full" />
+        <img src="./profile.png" alt="profile-placeholder" className="h-24px w-24px rounded-full" />
         {isNotification && (
           <div className="bg-red-600 w-8px h-8px absolute rounded-full top-8px right-24px" />
         )}

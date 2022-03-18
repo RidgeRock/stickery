@@ -22,6 +22,6 @@
     "stickery-adapter.dapplet-base.eth": "0.1.0"
   },
   "overlays": {
-    "stickery": "http://localhost:3000/sign-in"
+    "stickery": "http://localhost:3000"
   }
 }

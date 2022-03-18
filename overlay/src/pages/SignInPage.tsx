@@ -35,7 +35,7 @@ function SignInPage() {
     <div className="flex flex-col justify-center items-center h-screen w-screen">
       {!loading && (
         <>
-          <img src="/green-logo.png" alt="logo" className="w-64 mb-16px" />
+          <img src="./green-logo.png" alt="logo" className="w-64 mb-16px" />
           <p className="text-sm text-dark-gray mb-40px">
             Please sign in to start using this application
           </p>
@@ -55,7 +55,7 @@ function SignInPage() {
                 }
               }}
             >
-              <img className="mr-8px" src="/dapplets.svg" alt="dapplet-icon" /> Sign in with
+              <img className="mr-8px" src="./dapplets.svg" alt="dapplet-icon" /> Sign in with
               Dapplets
             </Button>
           </div>

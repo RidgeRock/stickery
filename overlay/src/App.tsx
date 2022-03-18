@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import SignInPage from './pages/SignInPage';
 import HomePage from './pages/HomePage';
 import { bridge } from './helpers/bridge';
@@ -47,7 +47,14 @@ const normalizeAndEnrichPosts = async (posts: Post[]): Promise<NormalizedPost> =
   return result;
 };
 
+
 function App() {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    navigate('/sign-in');
+  }, []);
+  
   useEffect(() => {
     bridge.onStick(async (data) => {
       try {
