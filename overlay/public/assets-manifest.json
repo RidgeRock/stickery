@@ -1,0 +1,23 @@
+{
+  "assets-manifest.json": "assets-manifest.json",
+  "black-logo.png": "black-logo.png",
+  "dapplets.svg": "dapplets.svg",
+  "favicon.ico": "favicon.ico",
+  "green-logo.png": "green-logo.png",
+  "icon.png": "icon.png",
+  "index.html": "index.html",
+  "loading.gif": "loading.gif",
+  "manifest.json": "manifest.json",
+  "profile.png": "profile.png",
+  "robots.txt": "robots.txt",
+  "sample.png": "sample.png",
+  "static/css/main.05bf5a59.css": "static/css/main.05bf5a59.css",
+  "static/css/main.05bf5a59.css.map": "static/css/main.05bf5a59.css.map",
+  "static/js/main.685729f2.js": "static/js/main.685729f2.js",
+  "static/js/main.685729f2.js.LICENSE.txt": "static/js/main.685729f2.js.LICENSE.txt",
+  "static/js/main.685729f2.js.map": "static/js/main.685729f2.js.map",
+  "static/media/Montserrat-Black.ttf": "static/media/Montserrat-Black.46e8b3d6aad654578958.ttf",
+  "static/media/Montserrat-Regular.ttf": "static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+  "static/media/Montserrat-Medium.ttf": "static/media/Montserrat-Medium.e2d60bc49517598c0ce8.ttf",
+  "static/media/Roboto-Regular.ttf": "static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf"
+}

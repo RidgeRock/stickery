@@ -1,9 +1,10 @@
 {
   "name": "stickery.dapplet-base.eth",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "A dapplet that puts stickers on posts using the Dapplets Project infrastructure",
   "main": "lib/index.js",
   "scripts": {
+    "postinstall": "concurrently -c \"blue,magenta,gray\" -n \"overlay,server,adapter\" \"cd overlay && npm i\" \"cd server && npm i\" \"cd adapter && npm i\"",
     "start": "concurrently -c \"yellow,blue,magenta,gray\" -n \"dapplet,overlay,server,adapter\" \"rollup -w --config rollup.config.js\" \"cd overlay && npm start\" \"cd server && npm run dev\" \"cd adapter && npm run start\"",
 	"start:dapplet-adapter": "concurrently -c \"yellow,blue\" -n \"dapplet,adapter\" \"rollup -w --config rollup.config.js\" \"cd adapter && npm run start\"",
     "build": "rollup --config rollup.config.js",

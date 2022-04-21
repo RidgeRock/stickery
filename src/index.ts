@@ -277,10 +277,8 @@ export default class StickeryFeature {
           try {
             const wallet = await Core.wallet({ type: 'ethereum', network: 'goerli' });
             await wallet.connect();
-            const account = await new Promise((res) =>
-              wallet.sendAndListen('eth_accounts', [], { result: (_, { data }) => res(data[0]) }),
-            );
-            this._overlay.send('connectWallet_done', account);
+            const accounts = await wallet.request({ method: 'eth_accounts', params: [] });
+            this._overlay.send('connectWallet_done', accounts[0]);
           } catch (err) {
             this._overlay.send('connectWallet_undone', err);
           }
@@ -308,12 +306,7 @@ export default class StickeryFeature {
 
           try {
             const wallet = await Core.wallet({ type: 'ethereum', network: 'goerli' });
-            const hash = await new Promise((resolve, reject) =>
-              wallet.sendAndListen('personal_sign', [account, message], {
-                rejected: () => reject(),
-                result: (_, { data }) => resolve(data),
-              }),
-            );
+            const hash = await wallet.request({ method: 'personal_sign', params: [account, message] });
             this._overlay.send('signMessage_done', hash);
           } catch (err) {
             this._overlay.send('signMessage_undone', err);
